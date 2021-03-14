@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<center><h1 style="color: red">Welcome to login page</h1></center>
+	    <hr>
+	
+	<style type="text/css">
+		.main{
+			box-sizing: border-box;
+			margin: 0 auto;
+			border: 1px solid red;
+			padding: 50px;
+			width: 25%;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		
+		<center><h3>Enter your valid user Id and Password</h3></center>
+		Username:<br><br>
+		<input type="text" name="text" id="username">
+		<br><br>
+		Password:<br><br>
+		<input type="Password" name="text" id="password">
+		<br><br>
+		<button onclick="mylogin()">Submit</button>
+		
+	</div>
+	<script type="text/javascript">
+		function mylogin() {
+	    var user= document.getElementById('username').value;
+		var pass=document.getElementById('password').value;
+          if (user=="obaid" && pass=="123") {
+          	location.assign("file:///E:/JavaScript%20project/new%20login/page2.html");
+          }
+          else{
+          	window.alert("enter valid credential");
+          }
+
+          }
+
+
+	</script>
+
+</body>
+</html>
